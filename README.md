@@ -133,7 +133,7 @@ async function getBearer(client_id, client_secret, code, code_challenge){
 
 The response should look like this:
 
-```json
+```
 {
   token_type: 'Bearer',
   expires_in: 2674800,
@@ -144,8 +144,18 @@ The response should look like this:
 
 Now you already have the token to perform your API queries.
 
+## Setup
+
+To run this project, follow these commands:
+```bash
+$ git clone https://github.com/vergonha/myanimelist-auth-example.git
+$ cd myanimelist-auth-example
+$ npm install
+$ npm start
+```
+
+Don't forget to add your keys in the [config/default.json](https://github.com/vergonha/myanimelist-auth-example/blob/main/config/default.json) file.
+
 ### Look at the file located in [utils/MAL.js](https://github.com/vergonha/myanimelist-auth-example/blob/main/utils/MAL.js) if you have questions about how to communicate with the API.
 
-End. Stay positive! 🌸
-
-![Footer](https://im3.ezgif.com/tmp/ezgif-3-6cadf0eb89.gif)
+![Footer](https://im3.ezgif.com/tmp/ezgif-3-bb38d71d0d.gif)
