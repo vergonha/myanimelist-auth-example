@@ -1,0 +1,23 @@
+html 
+    head 
+        title Sanctuary
+    body 
+        style
+            include ../public/stylesheets/sanctuary.css
+        div(class="main-content")
+            div(class="main-content__card")
+                div(class="card__image")
+                    img(src="https://i.pinimg.com/originals/f2/7a/b9/f27ab93e54f7e3d58484971ca4300b73.jpg", alt="banner")
+                div(class="card__content")
+                    div(class="card__title")
+                        img(src=profile.picture, alt="icon")
+                        h2.card__title #{profile.name}
+                    div(class="card__stats")
+                        h3.card__stats__desc Completes Animes: #{profile.anime_statistics.num_items_completed}
+                        h3.card__stats__desc Dropped Animes: #{profile.anime_statistics.num_items_dropped}
+                        h3.card__stats__desc Total Episodes: #{profile.anime_statistics.num_episodes}
+                        h3.card__stats__desc Mean Score: #{profile.anime_statistics.mean_score}
+                        br
+                        h3.card__stats__desc 🥇 Animes: 
+                        for anime in topAnimes 
+                            h3(style="font-size: 12px;").card__stats__desc ★ #{anime.node.title}

@@ -1,0 +1,75 @@
+.loading {
+    width: 100px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5px;
+    background-color: #333;
+  }
+
+  .dot:nth-child(1) {
+    animation: dot1 1s infinite;
+  }
+  
+  .dot:nth-child(2) {
+    animation: dot2 1s infinite;
+  }
+  
+  .dot:nth-child(3) {
+    animation: dot3 1s infinite;
+  }
+  
+  @keyframes dot1 {
+    0% {
+      transform: translate(0, 0);
+    }
+    20% {
+      transform: translate(0, -12px);
+    }
+    40% {
+      transform: translate(0, -13px);
+    }
+    100% {
+      transform: translate(0, -12px);
+    }
+  }
+  
+  @keyframes dot2 {
+    0% {
+      transform: translate(0, -12px);
+    }
+    20% {
+      transform: translate(0, 0);
+    }
+    40% {
+      transform: translate(0, -12px);
+    }
+    100% {
+      transform: translate(0, -13px);
+    }
+  }
+  
+  @keyframes dot3 {
+    0% {
+      transform: translate(0, -13px);
+    }
+    20% {
+      transform: translate(0, -12px);
+    }
+    40% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(0, -12px);
+    }
+  }
+  

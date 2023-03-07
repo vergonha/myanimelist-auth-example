@@ -1,0 +1,22 @@
+html 
+    head
+        link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css')
+        title MAL API Redirect 
+    style 
+        include ../public/stylesheets/index.css
+    body 
+        script(src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js")
+        script(type="text/javascript")
+            include ../utils/cookieList.js
+            include ../public/javascript/index.js
+        div(class="particle-js", id="particle-js")
+        div(class="container")
+            div(class="container-content")
+                div(class="main-title")
+                    h3 MyAnimeList Flow 🌸
+                    center 
+                        h4 Using ExpressJS
+                        div(class="login-area", onclick="auth();")
+                                a(class="login-area__login") Login 
+                                i.fa.fa-right-to-bracket
+                img(src="login-bg.gif", alt="Login Pretty Gif")

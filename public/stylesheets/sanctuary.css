@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: 100% 100%;
+    background-image: url("https://rare-gallery.com/mocahbig/409820-anime-monochrome-manga.jpg");
+}
+
+.img1 {
+    position: absolute;
+    width: 500px;
+    top: 100;
+    left: 100;
+    z-index: -1;
+    border-radius: 20px;
+}
+
+.img2 {
+    position: absolute;
+    width: 500px;
+    z-index: -2;
+    left: 110%;
+    border-radius: 20px;
+}
+
+.img3 {
+    width: 300px;
+    position: absolute;
+    z-index: -3;
+    right: 20%;
+    top: -50;
+    border-radius: 20px;
+}
+
+.background-image {
+    position: absolute;
+    z-index: -1;
+    top: 10%;
+    width: 50%;
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.main-content__card {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.85);
+    box-shadow: 0 0 100px black;
+}
+
+.card__image{
+    width: 40vh;
+    padding: 10px;
+}
+
+.card__image img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.card__content {
+    padding: 0 30px;
+    color: #f9f9f9;
+}
+
+.card__title {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    text-transform: capitalize;
+}
+
+
+.card__title img {
+    width: 50px;
+    border-radius: 100%;
+}
