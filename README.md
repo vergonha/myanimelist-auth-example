@@ -158,4 +158,4 @@ Don't forget to add your keys in the [config/default.json](https://github.com/ve
 
 ### Look at the file located in [utils/MAL.js](https://github.com/vergonha/myanimelist-auth-example/blob/main/utils/MAL.js) if you have questions about how to communicate with the API.
 
-![Footer](https://im3.ezgif.com/tmp/ezgif-3-bb38d71d0d.gif)
+![Footer](https://github.com/vergonha/myanimelist-auth-example/blob/main/public/assets/login-bg.gif?raw=true)
